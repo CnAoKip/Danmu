@@ -23,8 +23,8 @@ int main() {
 	HMODULE hShell32 = LoadLibrary("shell32.dll");
 	x1 = GetSystemMetrics(SM_CXSCREEN), y1 = GetSystemMetrics(SM_CYSCREEN);
 	HDC hdc1 = GetDC(NULL);
-	int x0 = GetDeviceCaps(hdc1, DESKTOPHORZRES);
-	int y0 = GetDeviceCaps(hdc1, DESKTOPVERTRES);
+	x0 = GetDeviceCaps(hdc1, DESKTOPHORZRES);
+	y0 = GetDeviceCaps(hdc1, DESKTOPVERTRES);
 	ReleaseDC(NULL, hdc1);
 	system("pause");
 	for (;;) {
