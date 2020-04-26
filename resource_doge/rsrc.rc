@@ -1,0 +1,3 @@
+#include "rsrc.h"
+
+ICON_DOGE ICON "doge.ico"
